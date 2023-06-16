@@ -9,5 +9,7 @@ int main(void)
 	for(int i = 65 ; i <= 90 ; i++)
                 putchar(i);
 
+	putchar('\n');
+
 	return (0);
 }
