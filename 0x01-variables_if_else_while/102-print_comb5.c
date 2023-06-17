@@ -23,7 +23,7 @@ int main(void)
 			{
 				for (; k < 58; k++)
 				{
-					putcha(i);
+					putchar(i);
 					putchar(j);
 					putchar(' ');
 					putchar(k);
