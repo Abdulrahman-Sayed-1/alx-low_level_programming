@@ -1,41 +1,31 @@
 #include <stdio.h>
 
 /**
- * main - a simple program that outputs unordered
- * combinations of two digit integers without duplicates
- *
- * Return: 0 on success
+ * main - prints all possible combinations of two two-digit numbers
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
-	int j;
-	int k;
-	int l;
+	int i, j;
 
-	for (i = 48; i < 58; i++)
+	for (i = 0; i < 100; i++)
 	{
-		for (j = 48; j < 58; j++)
+		for (j = 0; j < 100; j++)
 		{
-			l = j + 1;
-			k = i;
-			for (; k < 58; k++)
+			if (i < j)
 			{
-				for (; k < 58; k++)
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i != 98 || j != 99)
 				{
-					putchar(i);
-					putchar(j);
+					putchar(',');
 					putchar(' ');
-					putchar(k);
-					putchar(l);
-					if (i != 57 || k != 57 || j != 56 || k != 57)
-					{
-						putchar(',');
-						putchar(' ');
-					}
 				}
-				l = 48;
 			}
+
 		}
 	}
 	putchar('\n');
