@@ -1,30 +1,40 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible different combinations of three digits
- * Return: Always 0 (Success)
+ * main - a simple program that outputs unordered
+ * combinations of two digit integers without duplicates
+ *
+ * Return: 0 on success
  */
 int main(void)
 {
-	int n, m, l;
+	int i;
+	int j;
+	int k;
+	int l;
 
-	for (n = 48; n < 58; n++)
+	for (i = 48; i < 58; i++)
 	{
-		for (m = 49; m < 58; m++)
+		for (j = 48; j < 58; j++)
 		{
-			for (l = 50; l < 58; l++)
+			l = j + 1;
+			k = i;
+			for (; k < 58; k++)
 			{
-				if (l > m && m > n)
+				for (; k < 58; k++)
 				{
-					putchar(n);
-					putchar(m);
+					putcha(i);
+					putchar(j);
+					putchar(' ');
+					putchar(k);
 					putchar(l);
-					if (n != 55 || m != 56)
+					if (i != 57 || k != 57 || j != 56 || k != 57)
 					{
 						putchar(',');
 						putchar(' ');
 					}
 				}
+				l = 48;
 			}
 		}
 	}
