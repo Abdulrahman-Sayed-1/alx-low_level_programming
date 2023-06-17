@@ -1,15 +1,26 @@
 #include <stdio.h>
-
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ *
+ **/
 int main(void)
 {
+	char c = 'a';
 
-	for(int i = 97 ; i <= 122 ; i++)
-		putchar(i);
-
-	for(int i = 65 ; i <= 90 ; i++)
-                putchar(i);
-
+	while (1)
+	{
+		putchar(c);
+		if (c == 'z')
+		{
+			c = 'A';
+			continue;
+		}
+		if (c == 'Z')
+			break;
+		c++;
+	}
 	putchar('\n');
-
 	return (0);
 }
