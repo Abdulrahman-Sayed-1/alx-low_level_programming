@@ -1,14 +1,21 @@
 #include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-        for(int i = '0' ; i <= '9'; i++)
-		putchar(i);
+	char x = '0';
 
-	for(int i = 'a' ; i <= 'f'; i++)
-                putchar(i);
-
+	while (x <= 'f')
+	{
+		putchar(x++);
+		if (x == ':')
+		{
+			x = 'a';
+		}
+	}
 	putchar('\n');
-
-        return (0);
+	return (0);
 }
-
