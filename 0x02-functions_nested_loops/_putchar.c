@@ -4,8 +4,7 @@
  * file : _putchar.c 
  * 
  * 
- * decription: print the passed character to the stream output
- *
+ * description: prints the passed character to the stream output
  *
  *
  * return value : 1 on success.
