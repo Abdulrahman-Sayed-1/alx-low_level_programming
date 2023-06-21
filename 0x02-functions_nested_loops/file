@@ -1,5 +1,5 @@
 echo "enter file name"
 read filename
 echo "enter content"
-read content
-echo -e "#!/bin/bash\n$content" > $filename
+read -d \n content
+echo -e "#include\ \"main.h\"\n" > $filename
