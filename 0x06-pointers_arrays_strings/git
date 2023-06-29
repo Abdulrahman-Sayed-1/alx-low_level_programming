@@ -1,4 +1,4 @@
-echo "Enter  The Name : "
+echo "Enter The Name : "
 read name
 chmod u+x $name
 git add .
