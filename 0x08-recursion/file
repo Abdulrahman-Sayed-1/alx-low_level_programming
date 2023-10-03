@@ -1,0 +1,5 @@
+echo "What's The File Name ?"
+read file_name
+echo "What's The File Content ?"
+read file_content
+echo "$file_content" > $file_name

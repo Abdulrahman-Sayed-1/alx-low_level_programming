@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * _puts_recursion - prints a string's characters.
  *
@@ -14,9 +14,4 @@ void _puts_recursion(char *s)
 	_putchar(*s);
 
 	_puts_recursion(++s);
-}
-int main()
-{
-	_puts_recursion("Hello World !");
-	return (0);
 }
