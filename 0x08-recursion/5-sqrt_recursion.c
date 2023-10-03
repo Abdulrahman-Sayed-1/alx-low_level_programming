@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * sqrt - calculates the square root of a number greater than zero.
+ * square_root - calculates the square root of a number greater than zero.
  *
  * @n: The number whose square root will be calculated.
  * @guess: A helper variable to calculate the square root.
  *
  * Return: The square root of @n if it's a perfect square , otherwise -1.
  */
-int sqrt(int n, int guess)
+int square_root(int n, int guess)
 {
 	if (guess * guess == n)
 	{
@@ -15,7 +15,7 @@ int sqrt(int n, int guess)
 	}
 	else if (guess * guess < n)
 	{
-		return (sqrt(n, guess + 1));
+		return (square_root(n, guess + 1));
 	}
 	else
 	{
@@ -42,6 +42,6 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return (sqrt(n, 1));
+		return (square_root(n, 1));
 	}
 }
