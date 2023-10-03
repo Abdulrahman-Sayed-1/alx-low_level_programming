@@ -20,7 +20,7 @@ int check_if_palindrome(int len, char *s, int idx)
 		return (0);
 	}
 
-	check_if_palindrome(len, s, ++idx);
+	return (check_if_palindrome(len, s, ++idx));
 }
 
 /**
