@@ -4,9 +4,8 @@
  *
  * @n: The number whose factorial will be calculated.
  *
- * Returns:
- *   - The factorail if @n is greater than or equal to zero.
- *   - -1 if @n is less than zero
+ * Return: The factorial if @n is greater than or equal to zero,
+ * otherwise -1.
  */
 int factorial(int n)
 {
