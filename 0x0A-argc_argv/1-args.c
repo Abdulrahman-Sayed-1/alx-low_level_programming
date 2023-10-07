@@ -9,12 +9,12 @@
  */
 int main(int argc, char *argv[])
 {
-	int num = 0;
+	if (argc)	
+	{
+		printf("%d\n", argc - 1);
 
-	if (argc)
-		num = argc - 1;
-
-	printf("%d\n", num);
+		(void)argv;
+	}
 
 	return (0);
 }
