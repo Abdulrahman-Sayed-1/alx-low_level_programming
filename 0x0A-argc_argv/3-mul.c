@@ -9,15 +9,13 @@
  */
 int main(int argc, char *argv[])
 {
+	int i, res = 1;
 	if (argc < 3)
 	{
 		printf("Error\n");
 
 		return (1);
 	}
-
-	int i;
-	int res = 1;
 
 	for (i = 0; i < argc; ++i)
 	{
