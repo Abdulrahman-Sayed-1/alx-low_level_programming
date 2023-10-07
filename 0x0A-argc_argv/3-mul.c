@@ -16,11 +16,12 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	int i, res = 1;
+	int i;
+	int res = 1;
 
 	for (i = 0; i < argc; ++i)
 	{
-		res *= argv[i];
+		res *= atoi(argv[i]);
 	}
 
 	printf("%d\n", res);
