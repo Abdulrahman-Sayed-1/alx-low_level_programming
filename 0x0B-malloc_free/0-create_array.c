@@ -28,6 +28,6 @@ char *create_array(unsigned int size, char c)
 
 	free(r);
 
-	return (p);
+	return (r);
 }
 
