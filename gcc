@@ -1,3 +1,4 @@
 echo -e "Please enter the file name :"
 read file_name
 gcc $file_name -o test -Wall -Werror -Wextra -pedantic -std=gnu89
+betty $file_name
