@@ -24,6 +24,8 @@ char *str_concat(char *s1, char *s2)
 
 	new_str = malloc(size);
 
+	r = new_str;
+
 	if (new_str == NULL)
 		return (NULL);
 
