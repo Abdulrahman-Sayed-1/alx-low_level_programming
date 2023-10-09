@@ -13,7 +13,8 @@ char *str_concat(char *s1, char *s2)
 	char *p1, *p2, *new_str, *r;
 
 	p1 = s1, p2 = s2;
-	if (s1 == NULL && s2 == NULL)
+
+	if (*s1 == '\0' && *s2 == '\0')
 		return (NULL);
 
 	while (*s1 != '\0')
@@ -32,6 +33,7 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 
 	r = new_str;
+
 	for (i = 0; i < size; ++i, ++new_str)
 	{
 		if (*p1 != '\0')
@@ -41,6 +43,7 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	new_str = '\0';
+
 	return (r);
 }
 
