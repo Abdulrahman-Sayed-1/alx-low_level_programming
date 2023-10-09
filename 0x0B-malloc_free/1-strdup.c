@@ -15,7 +15,6 @@ char *_strdup(char *str)
 		return (NULL);
 
 	pos = str;
-	r = str;
 
 	while (*str != '\0')
 		++str, ++size;
@@ -24,6 +23,8 @@ char *_strdup(char *str)
 
 	if (new_str == NULL)
 		return (NULL);
+
+	r = new_str;
 
 	for (i = 0; i < size; ++i, ++new_str, ++pos)
 	{
