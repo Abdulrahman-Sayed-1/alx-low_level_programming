@@ -9,7 +9,7 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int *arr2D, **r, i, cnt = 0;
+	int *arr2D, **r, i, j;
 
 	if (width == 0 || height == 0 || width < 0 || height < 0)
 		return (NULL);
@@ -20,11 +20,15 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 
 	r = &arr2D;
-	cnt = (width * height);
 
-	for (i = 0; i < cnt; ++i, ++arr2D)
+	for (i = 0; i < height; ++i)
 	{
-		*arr2D = 0;
+		for (j = 0; j < width; ++j, ++arr2D)
+		{
+			*arr2D = 0;
+		}
+
+		arr2D = NULL;
 	}
 
 	return (r);
