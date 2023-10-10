@@ -9,15 +9,22 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int *arr2D, **r;
+	int *arr2D, **r, i, cnt = 0;
 
 	if (width == 0 || height == 0 || width < 0 || height < 0)
 		return (NULL);
 
-	arr2D = calloc(width * height, sizeof(int));
+	arr2D = malloc(sizeof(int) * width * height);
 
 	if (arr2D == NULL)
 		return (NULL);
+
+	cnt = (width * height);
+
+	for (i = 0; i < cnt; ++i)
+	{
+		*arr2D = 0;
+	}
 
 	r = &arr2D;
 
