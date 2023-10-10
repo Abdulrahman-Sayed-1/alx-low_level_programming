@@ -19,14 +19,13 @@ int **alloc_grid(int width, int height)
 	if (arr2D == NULL)
 		return (NULL);
 
+	r = &arr2D;
 	cnt = (width * height);
 
 	for (i = 0; i < cnt; ++i, ++arr2D)
 	{
 		*arr2D = 0;
 	}
-
-	r = &arr2D;
 
 	return (r);
 }
