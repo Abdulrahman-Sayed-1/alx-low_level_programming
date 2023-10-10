@@ -36,7 +36,7 @@ char *str_concat(char *s1, char *s2)
 
 	for (i = 0; i < size - 1; ++i, ++new_str)
 	{
-		if (*p1 != '\0')
+		if (*p1)
 			*new_str = *p1, ++p1;
 		else
 			*new_str = *p2, ++p2;
