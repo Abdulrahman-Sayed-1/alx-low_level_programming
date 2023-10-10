@@ -21,7 +21,7 @@ int **alloc_grid(int width, int height)
 
 	cnt = (width * height);
 
-	for (i = 0; i < cnt; ++i)
+	for (i = 0; i < cnt; ++i, ++arr2D)
 	{
 		*arr2D = 0;
 	}
