@@ -19,7 +19,7 @@ int **alloc_grid(int width, int height)
 	if (arr2D == NULL)
 		return (NULL);
 
-	r = arr2D;
+	r = &arr2D;
 
 	return (r);
 }
