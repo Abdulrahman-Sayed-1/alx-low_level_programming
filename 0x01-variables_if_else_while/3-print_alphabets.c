@@ -12,15 +12,21 @@ int main(void)
 	while (1)
 	{
 		putchar(c);
+
 		if (c == 'z')
 		{
 			c = 'A';
+
 			continue;
 		}
+
 		if (c == 'Z')
 			break;
+
 		c++;
 	}
+
 	putchar('\n');
+
 	return (0);
 }
