@@ -11,11 +11,14 @@ int main(void)
 	while (x <= 'f')
 	{
 		putchar(x++);
+
 		if (x == ':')
 		{
 			x = 'a';
 		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }
